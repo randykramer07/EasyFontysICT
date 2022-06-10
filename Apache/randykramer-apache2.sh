@@ -10,11 +10,11 @@ echo ===========================================================================
 echo Wat wil je gebruiken voor ServerAdmin Bijvoorbeeld SapWereld@localhost
 read ServerAdmin
 echo Wil jij een eigen URL gebruiken?
-read -p "(J)a / (N)ee " jn
-case $jn in 
-	[jJ] ) eigenURL;;
-	[nN] ) geenURL;;
-	* ) echo Ongeldige invoer, voer een goed antwoord in;;
+read -p "(J)a / (N)ee " yn
+case $yn in
+        [Jj]* ) eigenURL; break;;
+        [Nn]* ) geenURL;;
+        * ) echo "(J)a of (N)ee";;
 esac
 }
 
