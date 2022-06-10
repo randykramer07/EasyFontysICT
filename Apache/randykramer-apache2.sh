@@ -6,9 +6,6 @@ echo                     Apache2 Installatie Script by Randy Kramer
 echo 
 echo Aan de hand van dit script kun jij makkelijk in 1x een Apache website installeren
 echo =================================================================================
-
-echo Wat wil je gebruiken voor ServerAdmin Bijvoorbeeld SapWereld@localhost
-read ServerAdmin
 echo Wil jij een eigen URL gebruiken?
 read -p "(J)a / (N)ee " jn
 case $jn in
