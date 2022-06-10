@@ -8,11 +8,11 @@ echo Aan de hand van dit script kun jij makkelijk in 1x een Apache website insta
 echo =================================================================================
 echo Wil jij een eigen URL gebruiken?
 read -p "(J)a / (N)ee " jn
-case $jn in
-        [Jj]* ) eigenURL; break;;
-        [Nn]* ) geenURL;;
-        * ) echo "Er gaat iets fout";;
-esac
+	case $jn in
+        	[Jj]* ) eigenURL;;
+        	[Nn]* ) geenURL;;
+        	* ) echo "Er gaat iets fout";;
+	esac
 }
 
 eigenURL() {
