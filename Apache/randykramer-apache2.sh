@@ -4,7 +4,7 @@ apacheIntro() {
 echo =================================================================================
 echo                     Apache2 Installatie Script by Randy Kramer
 echo 
-echo Aan de hand van dit script kun jij makkelijk in 1x een Apache website installeren
+echo 	Aan de hand van dit script kun jij makkelijk een Apache website installeren
 echo =================================================================================
 echo Wil jij een eigen URL gebruiken?
 read -p "(J)a of (N)ee" jn
