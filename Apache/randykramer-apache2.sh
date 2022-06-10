@@ -7,7 +7,7 @@ echo
 echo Aan de hand van dit script kun jij makkelijk in 1x een Apache website installeren
 echo =================================================================================
 echo Wil jij een eigen URL gebruiken?
-read jn
+read -p "(J)a of (N)ee"jn
 	case $jn in
         	[Jj]* ) eigenURL;;
         	[Nn]* ) geenURL;;
