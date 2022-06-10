@@ -9,8 +9,8 @@ echo ===========================================================================
 echo Wil jij een eigen URL gebruiken?
 read -p "(J)a of (N)ee" jn
 case $jn in
-        [Jj]* ) eigenURL;;
-        [Nn]* ) geenURL;;
+        j|J) eigenURL;;
+        n|N) geenURL;;
         * ) echo "Er gaat iets fout";;
 esac
 }
