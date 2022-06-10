@@ -1,17 +1,20 @@
-#!/bin/bash
+#!/bin/env bash
 
 apacheIntro() {
 echo =================================================================================
 echo                     Apache2 Installatie Script by Randy Kramer
 echo 
-echo 	Aan de hand van dit script kun jij makkelijk een Apache website installeren
+echo Aan de hand van dit script kun jij makkelijk in 1x een Apache website installeren
 echo =================================================================================
+echo
+echo Wat wil je gebruiken voor ServerAdmin Bijvoorbeeld SapWereld@localhost
+read ServerAdmin
 echo Wil jij een eigen URL gebruiken?
-read -p "(J)a of (N)ee " yn
-case $yn in
-        y|Y|j|J) eigenURL;;
-        n|N) geenURL;;
-        * ) echo "Er gaat iets fout";;
+read -p "(J)a / (N)ee " jn
+case $jn in 
+	[jJ] ) eigenURL;;
+	[nN] ) geenURL;;
+	* ) echo Ongeldige invoer, voer een goed antwoord in;;
 esac
 }
 
