@@ -20,9 +20,16 @@ esac
 
 eigenURL() {
 echo =================================================================================
+echo
 echo Wat is de URL die je wilt gebruiken?
 read WEBURL
 ApacheInstallatieMetURL
+}
+
+geenURL() {
+echo =================================================================================
+echo Je hebt er voor gekozen om geen URL te gebruiken voor je webserver, komt goed!
+ApacheInstallatieZonderURL
 }
 
 ApacheInstallatieMetURL() {
@@ -48,6 +55,7 @@ systemctl enable apache2
 
 SuccesvolMetURL
 }
+
 ApacheInstallatieZonderURL() {
 echo =================================================================================
 echo                                 Apache Installatie
