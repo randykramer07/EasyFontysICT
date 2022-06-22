@@ -4,6 +4,7 @@ Easy Scripts for Fontys HBO ICT
 **## Scripting ##**
 
 **Apache**
+
 In de map Apache staat het script randykramer-apache.sh, met dit script kun je de volgende dingen doen.
   - Apache2 Installeren
   - Systeem laten updaten
