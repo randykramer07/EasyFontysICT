@@ -21,6 +21,7 @@ Er wordt gevraagd om user inputs aan de hand van je keuzes:
   - Wil je verifieëren met SSL
 
 **Zabbix**
+
 In de map Zabbix staat het script randykramer-zabbixconf.sh, met dit script kun je de volgende dingen doen.
   - Zabbix Agent Installeren
   - Systeem laten updaten
