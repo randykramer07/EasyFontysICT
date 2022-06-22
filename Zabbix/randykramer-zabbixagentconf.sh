@@ -35,7 +35,7 @@ else echo Helaas kan dit script niet gebruikt worden voor deze zabbix-agent inst
 fi
 }
 
-function ubuntu20
+function ubuntu2022
 {
 ifexitiszero
 ufw allow 10050
@@ -55,10 +55,11 @@ u2=$(echo $u1 | cut -c13- | rev | cut -c2- |rev)
 u3=$(echo $u2 | awk '{print int($1)}')
 #echo $u3       #prints os version id like this : 8
 
-if [[ $u3 -eq 20 ]];      then ubuntu20
+if [[ $u3 -eq 22 ]];      then ubuntu2022
+elif [[ $u3 -eq 20 ]];    then ubuntu2022
 elif [[ $u3 -eq 18 ]];    then ubuntu18
 elif [[ $u3 -eq 16 ]];    then ubuntu16
-elif [[ $u3 -eq 14 ]];    then ubuntu14
+elif [[ $u3 -eq 14 ]];	  then ubuntu14
 else echo Je kunt helaas dit script niet op deze machine gebruiken && exit 0
 fi
 }
